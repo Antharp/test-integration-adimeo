@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>Test integration</title>
+  </head>
+
+  <body>
+    <div class="main-page row">
+      <div class="col-1 main-menu d-flex flex-column p-0">
+          <div class="logo align-center p-3">
+            <img src="<%= require('../src/images/Logo.png') %>"> 
+          </div>
+          <hr>
+          <div class="menu-button align-center text-center">
+              <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="col menu-actions d-flex flex-column justify-content-around">
+            <div class="menu-item py-3">FR</div>
+            <div class="menu-item py-3"></div>
+            <div class="menu-item py-3"><i class="fa-regular fa-ticket"></i></div>
+            <div class="menu-item py-3"><i class="fa-regular fa-bag-shopping"></i></div>
+            <div class="menu-item py-3"><i class="fa-light fa-envelope"></i></div>
+            <div class="menu-item py-3"><i class="fa-regular fa-circle-info"></i></div>
+            <div class="menu-item py-3"></div>
+          </div>
+      </div>
+      <div class="col-md-6 col-xl-6 col-sm-8 col-xs-8 d-flex flex-column justify-content-between">
+        <div class="top-main-content"></div>
+        <div class="center-main-content">
+          <div class="sub-title my-3 align-center">
+            <span class="align-center"> En ce moment </span>
+          </div>
+          <h1 class="main-title my-3">
+            Plein Air.<br>
+            de Corot à Monet
+          </h1>
+          <div class="event-date my-3">
+             <span class="icon-calendar"><img src="<%= require('../src/images/calendar.svg') %>"></span> du 27 mars au 28 juin 2020
+          </div>
+          <div class="main-cta-button my-5">
+            <button type="button" class="button-animated py-3 px-4">Achetez votre billet</button>
+          </div>
+        </div>
+        <div class="social-media row">
+          <div class="col-3">
+            <span class="sub-title">Partagez:</span>
+          </div>
+          <div class="col-2 align-center">
+            f
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="col-2 align-center">
+            t
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="col-2 align-center">
+            i
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-xl-5 col-sm-3 col-xs-3 banner d-flex flex-column justify-content-between">
+        <div class="d-flex flex-row-reverse m-5">
+          <button type="button" class="btn museum-support-button p-4">
+            Soutenez le musée
+          </button>
+        </div>
+
+        <div class="image-info row p-2 align-center">
+          <img class="col-2" src="<%= require('../src/images/image-mini.png') %>"> 
+          <div class="col-10 image-text">
+            Camille Corot Trouville, bateaux de pêche échoués dans le canal, entre 1848 et 1875 © RMN-Grand Palais (musée du Louvre) / Hervé Lewandowski
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

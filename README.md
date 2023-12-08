@@ -1,2 +1,18 @@
-# test-integration-adimeo
-Integration test for Adimeo using webpack
+# 📦 test integration adimeo
+
+
+## Installation
+
+Clone this repo and npm install.
+
+```bash
+npm i
+```
+
+## Usage
+
+### Development server
+
+```bash
+npm start
+```

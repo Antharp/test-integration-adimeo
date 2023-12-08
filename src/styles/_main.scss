@@ -1,0 +1,179 @@
+@media only screen and (max-width: 768px) {
+    .main-page {
+      .top-main-content {
+        display: none;
+      }
+
+      .banner {
+        .museum-support-button {
+
+        }
+        .image-info {
+            display: none;
+            img {
+                display: none;
+            }
+        }
+      }
+    } 
+}
+
+@media only screen and (max-width: 1268px) {
+    .main-page {
+      .banner {
+        .image-info {
+            img {
+                display: none;
+            }
+        }
+      }
+    }
+}
+
+.main-page {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    .main-menu {
+        height: inherit;
+        hr {
+            border: 1px solid white;
+            opacity: 1;
+        }
+        .menu-button {
+            padding: 2vh 2vw 2vh 2vw;
+        }
+        .menu-actions {
+            background-color: white;
+            .menu-item {
+                color: $primary;
+                text-decoration: none;
+                font-size: 1.2vw;
+                align-items: center;
+                align-self: center;
+                border-bottom: 1px solid $font-color-secondary;
+            }
+        }
+    }
+    .center-main-content {
+        margin-left: 4vw;
+        z-index: 100;
+        align-items: center;
+        .sub-title {
+            color: $font-color-secondary;
+            font-family: 'museo-sans-rounded';
+            font-size: 1.2vw;
+            font-weight: 500;
+            background-color: white;
+            border-radius: 4px;
+            font-style: italic;
+            padding: 0.3em 1.5em;
+            width: fit-content;
+        }
+        .main-title {
+            font-size: 6vw;
+            white-space: nowrap;
+            font-family: $font-title;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0;
+        }
+        .event-date {
+            font-size: 1vw;
+            font-family: $font-subtitle;
+            .icon-calendar {
+                background-color: #BAABEB;
+                border-radius: 50%;
+                padding: 0.5em 0.6em;
+                margin-right: 0.2em;
+                img {
+                    width: 1em;
+                    height: 1.5em;
+                    padding-bottom: 0.3em; 
+                }
+            }
+        }
+        .main-cta-button {
+            .button-animated {
+                font-family: $font-subtitle;
+                position: relative;
+                font-size: 1.5vw;
+                align-items: start;
+                letter-spacing: 2px;
+                color: $font-color-primary;
+                border: 1px solid $font-color-primary;
+                outline: 0;
+                overflow:hidden;
+                background: none;
+                z-index: 1;
+                cursor: pointer;
+                transition:         0.1s ease-in;
+                -o-transition:      0.1s ease-in;
+                -ms-transition:     0.1s ease-in;
+                -moz-transition:    0.1s ease-in;
+                -webkit-transition: 0.1s ease-in;
+                &:before,
+                &:after {
+                  background: #BAABEB;
+                  transition: 0.3s ease;
+                  content: '';
+                  position: absolute;
+                  z-index: -1;
+                }
+                &:before {
+                    top: 0;
+                    right: 100%;
+                    bottom: 0;
+                    left: 0;
+                }
+                &:hover {
+                    &:before {
+                    right: 0;
+                    }
+                }
+              }
+        }
+    }
+    .social-media {
+        margin-left: 4vw;
+        margin-bottom: 1vh;
+        .sub-title {
+            font-size: 1.5vw;
+            font-family: $font-subtitle;
+        }
+    }
+
+    .banner {
+        z-index: 1;
+        background-image: url(../images/Fond-img.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        .museum-support-button {
+            font-family: $font-title;
+            background-color: $background-color;
+            border-radius: 3px;
+            color: white;
+            font-size: 1vw;
+            font-weight: 900;
+            &:hover {
+                background-color: #BAABEB;
+            }
+        }
+        .image-info {
+            background-color: rgba(255, 255, 255, 0.6);
+            img {
+                width: 3vw;
+                height: 3vh;
+            }
+            .image-text 
+            {
+                color: $font-color-secondary;
+                text-align: left;
+                letter-spacing: 0px;
+                font-size: 0.8vw;
+                color: $font-color-secondary
+            }
+        }
+    }
+}
+
